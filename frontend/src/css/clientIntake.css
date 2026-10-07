@@ -1,0 +1,141 @@
+.clientIntakePage {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f7f9fa;
+}
+
+.clientIntakeHeader {
+  max-width: 800px;
+  margin: 0 auto 25px;
+}
+
+.clientIntakeHeader h1 {
+  margin: 0 0 8px;
+  color: #14213d;
+  font-size: 32px;
+}
+
+.clientIntakeHeader p {
+  margin: 0;
+  color: #718096;
+  font-size: 16px;
+}
+
+.clientIntakeForm {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border: 1px solid #e1e5e5;
+  border-radius: 14px;
+}
+
+.clientIntakeSection {
+  margin-bottom: 30px;
+}
+
+.clientIntakeSection h2 {
+  margin: 0 0 18px;
+  color: #14213d;
+  font-size: 20px;
+}
+
+.clientIntakeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.clientIntakeField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.clientIntakeField label {
+  color: #5f6f86;
+  font-size: 14px;
+}
+
+.clientIntakeField input,
+.clientIntakeField select,
+.clientIntakeSection textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #d9e0e5;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+}
+
+.clientIntakeSection textarea {
+  resize: vertical;
+}
+
+.clientIntakeField input:focus,
+.clientIntakeField select:focus,
+.clientIntakeSection textarea:focus {
+  border-color: #16a6a0;
+}
+
+.clientIntakeConsent {
+  display: flex;
+  gap: 15px;
+  padding: 18px;
+  margin-bottom: 25px;
+  background: #f5faf9;
+  border-radius: 10px;
+}
+
+.clientIntakeConsent svg {
+  width: 24px;
+  color: #16a6a0;
+  flex-shrink: 0;
+}
+
+.clientIntakeConsent h3 {
+  margin: 0 0 8px;
+  color: #14213d;
+}
+
+.clientIntakeConsent label {
+  color: #5f6f86;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.clientIntakeConsent input {
+  margin-right: 8px;
+}
+
+.clientIntakeSubmit {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #16a6a0;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.clientIntakeSubmit:disabled {
+  background: #cbd5d8;
+  cursor: not-allowed;
+}
+
+@media (max-width: 650px) {
+  .clientIntakePage {
+    padding: 20px;
+  }
+
+  .clientIntakeForm {
+    padding: 20px;
+  }
+
+  .clientIntakeGrid {
+    grid-template-columns: 1fr;
+  }
+}

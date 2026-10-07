@@ -1,0 +1,289 @@
+.clientNotificationsSection {
+  padding: 36px 42px;
+  min-height: 100vh;
+  background: #f7f9fb;
+}
+
+/* Header */
+
+.clientNotificationsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.clientNotificationsEyebrow {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #6b8f71;
+}
+
+.clientNotificationsHeader h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #24332a;
+}
+
+.clientNotificationsHeader p {
+  margin: 8px 0 0;
+  color: #7b8580;
+  font-size: 14px;
+}
+
+.clientMarkAllButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  border: 1px solid #dce5df;
+  border-radius: 8px;
+  background: white;
+  color: #536158;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.clientMarkAllButton:hover {
+  background: #f1f5f2;
+}
+
+/* Summary */
+
+.clientNotificationSummary {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 17px 20px;
+  margin-bottom: 20px;
+  background: #edf7ef;
+  border: 1px solid #d9eadc;
+  border-radius: 11px;
+}
+
+.clientNotificationSummaryIcon {
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: white;
+  color: #4caf50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientNotificationSummary strong {
+  display: block;
+  color: #304036;
+  font-size: 14px;
+}
+
+.clientNotificationSummary span {
+  display: block;
+  margin-top: 4px;
+  color: #718077;
+  font-size: 12px;
+}
+
+/* Card */
+
+.clientNotificationsCard {
+  background: white;
+  border: 1px solid #e7ece9;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.clientNotificationsCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 25px;
+  border-bottom: 1px solid #edf0ee;
+}
+
+.clientNotificationsCardHeader h2 {
+  margin: 0;
+  font-size: 19px;
+  color: #29372e;
+}
+
+.clientNotificationsCardHeader p {
+  margin: 5px 0 0;
+  color: #87908a;
+  font-size: 12px;
+}
+
+.clientNotificationCount {
+  min-width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #edf7ef;
+  color: #4caf50;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Notification */
+
+.clientNotificationItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px 25px;
+  border-bottom: 1px solid #edf0ee;
+  transition: background 0.2s ease;
+}
+
+.clientNotificationItem:last-child {
+  border-bottom: none;
+}
+
+.clientNotificationItem:hover {
+  background: #fafcfb;
+}
+
+.clientNotificationUnread {
+  background: #fbfefb;
+}
+
+.clientNotificationIcon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientNotificationIcon-session {
+  background: #edf7ef;
+  color: #4caf50;
+}
+
+.clientNotificationIcon-message {
+  background: #eef4fa;
+  color: #5682ad;
+}
+
+.clientNotificationIcon-payment {
+  background: #f7f1e8;
+  color: #aa8050;
+}
+
+.clientNotificationIcon-reminder {
+  background: #f3eff9;
+  color: #8167a3;
+}
+
+.clientNotificationIcon-success {
+  background: #edf7ef;
+  color: #4caf50;
+}
+
+/* Content */
+
+.clientNotificationContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.clientNotificationTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.clientNotificationTitleRow h3 {
+  margin: 0;
+  color: #334138;
+  font-size: 14px;
+}
+
+.clientUnreadDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4caf50;
+}
+
+.clientNotificationContent p {
+  margin: 7px 0;
+  color: #737e77;
+  font-size: 12px;
+  line-height: 1.55;
+  max-width: 750px;
+}
+
+.clientNotificationTime {
+  color: #a0a8a3;
+  font-size: 11px;
+}
+
+/* Remove */
+
+.clientNotificationRemove {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  color: #a2aaa5;
+  cursor: pointer;
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientNotificationRemove:hover {
+  background: #f0f3f1;
+  color: #66716b;
+}
+
+/* Footer */
+
+.clientNotificationsFooter {
+  margin-top: 18px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #7d8881;
+  font-size: 12px;
+}
+
+.clientNotificationsFooter svg {
+  color: #4caf50;
+}
+
+/* Responsive */
+
+@media (max-width: 700px) {
+  .clientNotificationsSection {
+    padding: 25px 18px;
+  }
+
+  .clientNotificationsHeader {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .clientNotificationItem {
+    padding: 17px;
+  }
+
+  .clientNotificationsCardHeader {
+    padding: 18px;
+  }
+}

@@ -1,0 +1,582 @@
+.clientsPage {
+  width: 100%;
+}
+
+.clientsHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.clientsHeader h1 {
+  margin: 0;
+  color: #172033;
+  font-size: 30px;
+}
+
+.clientsSubtitle {
+  margin: 7px 0 0;
+  color: #7d899b;
+  font-size: 15px;
+}
+
+.addClientButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 17px;
+  border: none;
+  border-radius: 10px;
+  background-color: #172235;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.addClientButton svg {
+  width: 17px;
+  height: 17px;
+}
+
+
+/* ==========================================
+   STATS
+========================================== */
+
+.clientStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.clientStatCard {
+  background: white;
+  border: 1px solid #e2e8ef;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.clientStatCard span {
+  display: block;
+  color: #7d899b;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.clientStatCard strong {
+  color: #172033;
+  font-size: 25px;
+}
+
+
+/* ==========================================
+   PANEL
+========================================== */
+
+.clientsPanel {
+  background: white;
+  border: 1px solid #e2e8ef;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.clientsToolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  border-bottom: 1px solid #e9eef3;
+}
+
+.drop{
+  display: flex;
+  gap: 20px;
+}
+
+.clientSearch {
+  width: 350px;
+  max-width: 100%;
+  height: 42px;
+  border: 1px solid #dce4ec;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+.clientSearch svg {
+  width: 17px;
+  color: #95a3b6;
+}
+
+.clientSearch input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+  color: #273348;
+}
+
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.clientsTableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.clientsTable {
+  width: 100%;
+  min-width: 850px;
+  border-collapse: collapse;
+}
+
+.clientsTable th {
+  padding: 14px 18px;
+  text-align: left;
+  background: #f8fafc;
+  color: #8491a3;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.clientsTable td {
+  padding: 16px 18px;
+  border-top: 1px solid #edf1f5;
+}
+
+
+/* ==========================================
+   CLIENT
+========================================== */
+
+.clientName {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.clientAvatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  background: #e8f8f6;
+  color: #14998e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.clientName strong {
+  display: block;
+  color: #273348;
+  font-size: 14px;
+}
+
+.clientName span {
+  display: block;
+  margin-top: 3px;
+  color: #909baa;
+  font-size: 11px;
+}
+
+
+/* ==========================================
+   CONTACT
+========================================== */
+
+.clientContact span {
+  display: block;
+  color: #66758a;
+  font-size: 12px;
+}
+
+.clientContact span + span {
+  margin-top: 4px;
+}
+
+
+/* ==========================================
+   OTHER COLUMNS
+========================================== */
+
+.sessionCount {
+  color: #52627a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lastSession {
+  color: #68768b;
+  font-size: 13px;
+}
+
+
+/* ==========================================
+   STATUS
+========================================== */
+
+.clientStatusActive,
+.clientStatusInactive {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.clientStatusActive {
+  color: #168c82;
+  background: #e7faf7;
+}
+
+.clientStatusInactive {
+  color: #7c8796;
+  background: #f0f3f6;
+}
+
+
+/* ==========================================
+   ACTION
+========================================== */
+
+.clientAction {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #8b98aa;
+}
+
+.clientAction svg {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* ==========================================
+   NO CLIENTS
+========================================== */
+
+.noClients {
+  text-align: center !important;
+  padding: 40px !important;
+  color: #8995a6;
+}
+
+
+/* ==========================================
+   QUICK ACTIONS
+========================================== */
+
+.clientQuickActions {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.clientQuickActions button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border: 1px solid #dfe6ed;
+  border-radius: 9px;
+  background: white;
+  color: #52627a;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.clientQuickActions svg {
+  width: 16px;
+  height: 16px;
+  color: #18a89d;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 700px) {
+
+  .clientsHeader {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .clientStats {
+    grid-template-columns: 1fr;
+  }
+
+  .clientQuickActions {
+    flex-direction: column;
+  }
+
+}
+
+/* =================================
+   CLIENT MODAL
+================================= */
+
+.clientModalOverlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1000;
+}
+
+
+.clientModal {
+  width: 520px;
+  max-width: 90%;
+
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 24px;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+
+.clientModalHeader {
+  display: flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+
+.clientModalHeader h2 {
+  margin: 0 0 6px;
+}
+
+
+.clientModalHeader p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+
+.clientModalClose {
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  padding: 5px;
+}
+
+
+.unassignedClientList {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+
+  max-height: 400px;
+
+  overflow-y: auto;
+}
+
+
+.unassignedClient {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px;
+
+  border: 1px solid #e8e8e8;
+
+  border-radius: 12px;
+}
+
+
+.unassignedClientInfo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+
+.unassignedClientInfo > div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+
+.unassignedClientInfo span {
+  font-size: 13px;
+
+  color: #777;
+}
+
+
+.assignClientButton {
+  border: none;
+
+  background: #2f8f83;
+
+  color: white;
+
+  padding: 8px 16px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+
+.assignClientButton:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+}
+
+
+.noUnassignedClients {
+  text-align: center;
+
+  padding: 40px 20px;
+
+  color: #777;
+}
+
+
+.noUnassignedClients svg {
+  width: 35px;
+  height: 35px;
+
+  margin-bottom: 10px;
+}
+
+
+.noUnassignedClients h3 {
+  margin: 0 0 6px;
+
+  color: #333;
+}
+
+
+.noUnassignedClients p {
+  margin: 0;
+
+  font-size: 14px;
+}
+
+.clientNameButton {
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.clientNameButton:hover .clientName strong {
+  color: #14998e;
+}
+
+.clientStatusFilter,
+.clientSortFilter {
+  padding: 10px 14px;
+  border: 1px solid #d9e0e5;
+  border-radius: 8px;
+  background: #fff;
+  color: #4a5568;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.clientStatusFilter:focus,
+.clientSortFilter:focus {
+  border-color: #16a6a0;
+}
+
+.clientTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.clientTag {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #eef7f6;
+  color: #16827d;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.noTags {
+  color: #9aa5b1;
+  font-size: 13px;
+}
+
+.addTagBox {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.addTagBox input {
+  width: 90px;
+  padding: 6px 8px;
+  border: 1px solid #d9e0e5;
+  border-radius: 6px;
+  font-size: 12px;
+  outline: none;
+}
+
+.addTagBox input:focus {
+  border-color: #16a6a0;
+}
+
+.addTagBox button {
+  padding: 6px 9px;
+  border: none;
+  border-radius: 6px;
+  background: #16a6a0;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.addTagBox button:hover {
+  opacity: 0.9;
+}

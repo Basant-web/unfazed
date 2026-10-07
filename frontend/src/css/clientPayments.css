@@ -1,0 +1,379 @@
+.clientPayments {
+  width: 100%;
+}
+
+/* HEADER */
+
+.clientPaymentsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.clientPaymentsHeader h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #172323;
+}
+
+.clientPaymentsHeader p {
+  margin: 7px 0 0;
+  color: #718080;
+  font-size: 14px;
+}
+
+.addPaymentButton {
+  border: none;
+  background: #173b3b;
+  color: white;
+
+  padding: 11px 16px;
+  border-radius: 7px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.addPaymentButton:hover {
+  background: #245454;
+}
+
+
+/* SUMMARY */
+
+.paymentSummary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+  margin-bottom: 25px;
+}
+
+.paymentSummaryCard {
+  background: white;
+  border: 1px solid #e1e9e9;
+  border-radius: 10px;
+
+  padding: 19px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.paymentSummaryIcon {
+  width: 43px;
+  height: 43px;
+
+  border-radius: 9px;
+
+  background: #e7f3f1;
+  color: #286b68;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paymentSummaryCard span {
+  display: block;
+  color: #778686;
+  font-size: 12px;
+}
+
+.paymentSummaryCard strong {
+  display: block;
+  margin-top: 3px;
+
+  color: #172323;
+  font-size: 21px;
+}
+
+.paymentSummaryCard small {
+  display: block;
+  margin-top: 3px;
+
+  color: #9aa4a4;
+  font-size: 10px;
+}
+
+
+/* COMMON SECTION */
+
+.paymentMethodSection,
+.transactionsSection {
+  background: white;
+  border: 1px solid #e1e9e9;
+  border-radius: 10px;
+
+  padding: 20px;
+  margin-bottom: 22px;
+}
+
+.paymentSectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 17px;
+}
+
+.paymentSectionHeader h2 {
+  margin: 0;
+
+  color: #172323;
+  font-size: 18px;
+}
+
+.paymentSectionHeader p {
+  margin: 5px 0 0;
+
+  color: #7b8888;
+  font-size: 12px;
+}
+
+
+/* PAYMENT METHOD */
+
+.editPaymentButton {
+  border: none;
+  background: transparent;
+
+  color: #286b68;
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+.savedPaymentCard {
+  border: 1px solid #e3ebeb;
+  border-radius: 8px;
+
+  padding: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.savedCardIcon {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 7px;
+
+  background: #f0f5f4;
+  color: #4d6867;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.savedCardInfo {
+  flex: 1;
+}
+
+.savedCardInfo strong {
+  display: block;
+
+  color: #304040;
+  font-size: 13px;
+}
+
+.savedCardInfo span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #899696;
+  font-size: 11px;
+}
+
+.defaultPaymentBadge {
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  background: #e5f4ed;
+  color: #287052;
+
+  font-size: 10px;
+}
+
+
+/* TRANSACTIONS */
+
+.downloadStatementButton {
+  border: 1px solid #d5e0df;
+  background: white;
+
+  color: #3d5b5a;
+
+  padding: 8px 12px;
+
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.downloadStatementButton:hover {
+  background: #f3f7f7;
+}
+
+.transactionsTable {
+  width: 100%;
+}
+
+.transactionTableHeader,
+.transactionRow {
+  display: grid;
+
+  grid-template-columns:
+    1.1fr
+    1.7fr
+    1.5fr
+    0.8fr
+    0.8fr
+    35px;
+
+  align-items: center;
+  gap: 12px;
+}
+
+.transactionTableHeader {
+  padding: 12px 8px;
+
+  border-bottom: 1px solid #e5ebeb;
+
+  color: #899595;
+  font-size: 10px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.transactionRow {
+  padding: 15px 8px;
+
+  border-bottom: 1px solid #edf1f1;
+
+  color: #586666;
+  font-size: 11px;
+}
+
+.transactionRow:last-child {
+  border-bottom: none;
+}
+
+.transactionDescription {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #455555;
+}
+
+.transactionDate {
+  color: #657575;
+}
+
+.transactionAmount {
+  color: #263636;
+  font-size: 12px;
+}
+
+.paymentPaidBadge,
+.paymentPendingBadge {
+  width: fit-content;
+
+  padding: 5px 9px;
+
+  border-radius: 20px;
+
+  font-size: 10px;
+}
+
+.paymentPaidBadge {
+  background: #e7f4ed;
+  color: #287052;
+}
+
+.paymentPendingBadge {
+  background: #fff4dd;
+  color: #966e22;
+}
+
+.invoiceButton {
+  width: 30px;
+  height: 30px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: transparent;
+  color: #728181;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.invoiceButton:hover {
+  background: #f0f5f4;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .paymentSummary {
+    grid-template-columns: 1fr;
+  }
+
+  .transactionTableHeader {
+    display: none;
+  }
+
+  .transactionRow {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .clientPaymentsHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .paymentSectionHeader {
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .transactionRow {
+    grid-template-columns: 1fr;
+  }
+
+  .savedPaymentCard {
+    align-items: flex-start;
+  }
+
+}

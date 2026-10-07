@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8fafc;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 70px;
+  flex-shrink: 0;
+}
+
+.main {
+  flex: 1;
+
+  background-color: #f8fafc;
+
+  padding: 30px 60px;
+}
+
+
+/* =================================
+   REGISTER OVERLAY
+================================= */
+
+.registerOverlay {
+  position: fixed;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  background: rgba(15, 23, 42, 0.55);
+
+  z-index: 9999;
+}
+
+
+/* =================================
+   REGISTER MODAL
+================================= */
+
+.registerModal {
+  position: relative;
+
+  width: 520px;
+
+  max-width: 100%;
+
+  background-color: #ffffff;
+
+  border-radius: 20px;
+
+  box-shadow:
+    0 25px 70px rgba(15, 23, 42, 0.25);
+
+  overflow: hidden;
+}
+
+
+/* =================================
+   CLOSE BUTTON
+================================= */
+
+.closeRegister {
+  position: absolute;
+
+  top: 15px;
+  right: 18px;
+
+  width: 35px;
+  height: 35px;
+
+  border: none;
+
+  background: transparent;
+
+  font-size: 28px;
+
+  line-height: 1;
+
+  color: #64748b;
+
+  cursor: pointer;
+
+  z-index: 10;
+}
+
+.closeRegister:hover {
+  color: #0f172a;
+}

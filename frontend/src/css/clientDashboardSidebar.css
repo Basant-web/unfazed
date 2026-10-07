@@ -1,0 +1,363 @@
+/* =================================
+   SIDEBAR
+================================= */
+
+.clientDashboardSidebar {
+  width: 270px;
+
+  min-height: 100vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  background: white;
+
+  border-right: 1px solid #e5ebea;
+
+  padding: 25px 15px;
+
+  flex-shrink: 0;
+}
+
+
+/* =================================
+   LOGO
+================================= */
+
+.clientSidebarLogo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 0 10px;
+
+  margin-bottom: 30px;
+}
+
+
+.clientLogoIcon {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #2f8f83;
+
+  color: white;
+
+  font-size: 12px;
+
+  font-weight: 800;
+}
+
+
+.clientSidebarLogo > div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+
+.clientSidebarLogo strong {
+  font-size: 16px;
+
+  color: #263634;
+}
+
+
+.clientSidebarLogo span {
+  font-size: 10px;
+
+  color: #81908e;
+}
+
+
+/* =================================
+   PROFILE
+================================= */
+
+.clientSidebarProfile {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 14px;
+
+  margin-bottom: 24px;
+
+  background: #f3f8f7;
+
+  border-radius: 12px;
+}
+
+
+.clientProfileAvatar {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #d7ece8;
+
+  color: #28766d;
+
+  font-size: 12px;
+
+  font-weight: 700;
+}
+
+
+.clientProfileInfo {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+
+  min-width: 0;
+}
+
+
+.clientProfileInfo strong {
+  font-size: 13px;
+
+  color: #283735;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+}
+
+
+.clientProfileInfo span {
+  font-size: 11px;
+
+  color: #788582;
+}
+
+
+/* =================================
+   NAVIGATION
+================================= */
+
+.clientSidebarNavigation {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+
+.clientSidebarTitle {
+  margin: 0 10px 9px;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+
+  font-weight: 700;
+
+  color: #9aa5a3;
+}
+
+
+.clientSidebarMenuItem {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 11px 12px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: transparent;
+
+  color: #697673;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  font-size: 13px;
+}
+
+
+.clientSidebarMenuItem svg {
+  flex-shrink: 0;
+}
+
+
+.clientSidebarMenuItem:hover {
+  background: #f2f6f5;
+}
+
+
+.clientSidebarMenuItemActive {
+  background: #253432;
+
+  color: white;
+}
+
+
+.clientSidebarMenuItemActive:hover {
+  background: #253432;
+}
+
+
+.clientSidebarBadge {
+  margin-left: auto;
+
+  min-width: 21px;
+
+  padding: 3px 6px;
+
+  border-radius: 10px;
+
+  background: #e3f1ef;
+
+  color: #347f76;
+
+  font-size: 10px;
+
+  text-align: center;
+}
+
+
+.clientSidebarMenuItemActive .clientSidebarBadge {
+  background: #42615d;
+
+  color: white;
+}
+
+
+.clientSidebarDot {
+  width: 7px;
+  height: 7px;
+
+  margin-left: auto;
+
+  border-radius: 50%;
+
+  background: #2f8f83;
+}
+
+
+/* =================================
+   LOGOUT
+================================= */
+
+.clientSidebarBottom {
+  margin-top: auto;
+
+  padding-top: 20px;
+
+  border-top: 1px solid #edf1f0;
+}
+
+
+.clientSidebarLogout {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 11px 12px;
+
+  border: none;
+
+  background: transparent;
+
+  border-radius: 9px;
+
+  color: #778481;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  text-align: left;
+}
+
+
+.clientSidebarLogout:hover {
+  background: #fff2f2;
+
+  color: #b85c5c;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 800px) {
+
+  .clientDashboardSidebar {
+    width: 220px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .clientDashboardSidebar {
+    width: 70px;
+
+    padding: 20px 10px;
+  }
+
+  .clientSidebarLogo > div:last-child,
+  .clientSidebarProfile,
+  .clientSidebarTitle,
+  .clientSidebarMenuItem span,
+  .clientSidebarLogout span {
+    display: none;
+  }
+
+  .clientSidebarLogo {
+    justify-content: center;
+
+    padding: 0;
+  }
+
+  .clientSidebarMenuItem {
+    justify-content: center;
+  }
+
+  .clientSidebarMenuItem svg {
+    margin: 0;
+  }
+
+}

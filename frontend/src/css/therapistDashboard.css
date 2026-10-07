@@ -1,0 +1,46 @@
+.therapistDashboard {
+
+  min-height: 100vh;
+
+  background-color: #f7f9fc;
+
+  display: flex;
+
+  gap: 25px;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+
+}
+
+
+.dashboardContent {
+
+  flex: 1;
+
+  padding: 25px;
+
+}
+
+
+.dashboardContent h1 {
+
+  margin: 0;
+
+  font-size: 30px;
+
+  color: #172033;
+
+}
+
+
+.dashboardContent p {
+
+  margin-top: 8px;
+
+  color: #758197;
+
+  font-size: 16px;
+
+}

@@ -1,0 +1,370 @@
+.findTherapist {
+  width: 100%;
+}
+
+/* HEADER */
+
+.findTherapistHeader {
+  margin-bottom: 25px;
+}
+
+.findTherapistHeader h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #172323;
+}
+
+.findTherapistHeader p {
+  margin: 7px 0 0;
+  color: #718080;
+  font-size: 14px;
+}
+
+
+/* SEARCH */
+
+.therapistSearchBox {
+  background: white;
+  border: 1px solid #e1e9e9;
+  border-radius: 10px;
+  padding: 18px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 12px;
+
+  margin-bottom: 28px;
+}
+
+.therapistSearchInput {
+  height: 42px;
+  border: 1px solid #dce5e5;
+  border-radius: 7px;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 0 12px;
+
+  color: #718080;
+}
+
+.therapistSearchInput input {
+  width: 100%;
+  border: none;
+  outline: none;
+
+  font-size: 13px;
+  color: #263636;
+}
+
+.therapistSearchInput input::placeholder {
+  color: #9aa5a5;
+}
+
+.therapistFilter,
+.sortTherapists {
+  height: 42px;
+  border: 1px solid #dce5e5;
+  border-radius: 7px;
+
+  background: white;
+  padding: 0 11px;
+
+  color: #4e5e5e;
+  font-size: 13px;
+
+  outline: none;
+}
+
+.searchTherapistButton {
+  border: none;
+  border-radius: 7px;
+
+  padding: 0 20px;
+
+  background: #173b3b;
+  color: white;
+
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.searchTherapistButton:hover {
+  background: #245454;
+}
+
+
+/* RESULTS HEADER */
+
+.therapistResultsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
+.therapistResultsHeader h2 {
+  margin: 0;
+  font-size: 19px;
+  color: #172323;
+}
+
+.therapistResultsHeader p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #7b8888;
+}
+
+
+/* GRID */
+
+.therapistGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+
+/* CARD */
+
+.findTherapistCard {
+  background: white;
+  border: 1px solid #e1e9e9;
+  border-radius: 10px;
+
+  padding: 20px;
+}
+
+.findTherapistCard:hover {
+  border-color: #cbdede;
+}
+
+
+/* TOP */
+
+.therapistCardTop {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.therapistAvatar {
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  background: #e6f2f1;
+  color: #286b68;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.therapistBasicInfo h3 {
+  margin: 0;
+
+  font-size: 16px;
+  color: #1e3030;
+}
+
+.therapistBasicInfo p {
+  margin: 4px 0;
+
+  font-size: 12px;
+  color: #748282;
+}
+
+.therapistRating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  color: #a27a22;
+
+  font-size: 12px;
+}
+
+.therapistRating span {
+  color: #899595;
+}
+
+
+/* DETAILS */
+
+.therapistCardDetails {
+  border-top: 1px solid #edf1f1;
+  border-bottom: 1px solid #edf1f1;
+
+  margin: 18px 0;
+  padding: 14px 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.therapistCardDetails div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #708080;
+  font-size: 12px;
+}
+
+
+/* AVAILABILITY */
+
+.therapistAvailability {
+  background: #f1f8f6;
+  border-radius: 7px;
+
+  padding: 11px 12px;
+
+  margin-bottom: 15px;
+}
+
+.availabilityTitle {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #286b68;
+  font-size: 12px;
+}
+
+.therapistAvailability > span {
+  display: block;
+
+  margin-top: 4px;
+
+  color: #728282;
+  font-size: 11px;
+}
+
+
+/* ACTIONS */
+
+.therapistCardActions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+}
+
+.viewTherapistButton,
+.bookTherapistButton {
+  height: 38px;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.viewTherapistButton {
+  background: white;
+
+  border: 1px solid #cbdada;
+
+  color: #285b59;
+}
+
+.bookTherapistButton {
+  border: none;
+
+  background: #173b3b;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.bookTherapistButton:hover {
+  background: #245454;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+  .therapistSearchBox {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .searchTherapistButton {
+    height: 42px;
+  }
+
+  .therapistGrid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .therapistSearchBox {
+    grid-template-columns: 1fr;
+  }
+
+  .therapistResultsHeader {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .therapistCardActions {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.bookingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1000;
+}
+
+.bookingModal {
+  position: relative;
+  width: 50%;
+  max-width: 90%;
+  max-height: 90vh;
+
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+
+  overflow-y: auto;
+}
+
+.closeBooking {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  border: none;
+  background: none;
+
+  font-size: 28px;
+  cursor: pointer;
+}
+

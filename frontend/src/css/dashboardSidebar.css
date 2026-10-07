@@ -1,0 +1,1056 @@
+.dashboardSidebar {
+
+  width: 360px;
+
+  min-height: 100vh;
+
+  background-color: #ffffff;
+
+  border: 1px solid #dbe3ec;
+
+  border-radius: 20px;
+
+  padding: 28px 20px 20px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 4px 15px rgba(15, 23, 42, 0.04);
+
+}
+
+
+/* ==========================================
+   PROFILE
+========================================== */
+
+.sidebarProfile {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  padding: 0 0 20px 0;
+
+}
+
+
+.profileAvatar {
+
+  width: 60px;
+
+  height: 60px;
+
+  flex-shrink: 0;
+
+  border-radius: 19px;
+
+  background: linear-gradient(
+    135deg,
+    #173f45,
+    #092934
+  );
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #48d6cd;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  border: 1px solid #d6e1e8;
+
+}
+
+
+.profileInfo {
+
+  min-width: 0;
+
+}
+
+
+.profileInfo h2 {
+
+  margin: 0;
+
+  font-size: 18px;
+
+  font-weight: 700;
+
+  color: #172033;
+
+  line-height: 1.3;
+
+}
+
+
+.profileInfo p {
+
+  margin: 4px 0 7px;
+
+  font-size: 14px;
+
+  color: #7b8799;
+
+}
+
+
+/* ==========================================
+   PRACTICE TIER
+========================================== */
+
+.practiceTier {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 5px 9px;
+
+  border: 1px solid #7ce8df;
+
+  border-radius: 7px;
+
+  color: #17766e;
+
+  background-color: #f2fffd;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+}
+
+
+.practiceTier span {
+
+  width: 8px;
+
+  height: 8px;
+
+  border-radius: 50%;
+
+  background-color: #13b99d;
+
+}
+
+
+/* ==========================================
+   DIVIDER
+========================================== */
+
+.sidebarDivider {
+
+  height: 1px;
+
+  background-color: #e7edf3;
+
+  margin-bottom: 18px;
+
+}
+
+
+/* ==========================================
+   MENU
+========================================== */
+
+.sidebarMenu {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+
+}
+
+
+.sidebarMenuItem {
+
+  position: relative;
+
+  width: 100%;
+
+  min-height: 54px;
+
+  border: none;
+
+  background: transparent;
+
+  border-radius: 15px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 18px;
+
+  gap: 17px;
+
+  cursor: pointer;
+
+  color: #52627a;
+
+  text-align: left;
+
+  font-family: inherit;
+
+  transition: 0.2s ease;
+
+}
+
+
+.sidebarMenuItem:hover {
+
+  background-color: #f5f8fb;
+
+}
+
+
+/* ==========================================
+   ACTIVE MENU
+========================================== */
+
+.sidebarMenuItemActive {
+
+  background-color: #202b3e;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 7px 15px rgba(15, 23, 42, 0.18);
+
+}
+
+
+.sidebarMenuItemActive:hover {
+
+  background-color: #202b3e;
+
+}
+
+
+.sidebarMenuItemActive .sidebarIcon {
+
+  color: #35d5ca;
+
+}
+
+
+/* ==========================================
+   ICON
+========================================== */
+
+.sidebarIcon {
+
+  width: 18px;
+
+  height: 18px;
+
+  flex-shrink: 0;
+
+  color: #98a9c1;
+
+  stroke-width: 2.2;
+
+}
+
+
+.sidebarMenuText {
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+
+}
+
+
+/* ==========================================
+   BADGES
+========================================== */
+
+.sidebarBadge {
+
+  margin-left: auto;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  padding: 5px 8px;
+
+  border-radius: 6px;
+
+  white-space: nowrap;
+
+}
+
+
+/* Today */
+
+.todayBadge {
+
+  color: #167b71;
+
+  background-color: #c9f7ef;
+
+}
+
+
+/* Clients */
+
+.countBadge {
+
+  color: #52627a;
+
+  background-color: #f1f4f8;
+
+}
+
+
+/* Notifications */
+
+.notificationBadge {
+
+  color: #d83d52;
+
+  background-color: #ffe1e5;
+
+}
+
+
+/* ==========================================
+   MESSAGE DOT
+========================================== */
+
+.messageDot {
+
+  width: 10px;
+
+  height: 10px;
+
+  border-radius: 50%;
+
+  background-color: #19b8a8;
+
+  margin-left: auto;
+
+}
+
+
+/* ==========================================
+   LOGOUT
+========================================== */
+
+.sidebarLogout {
+
+  width: 100%;
+
+  height: 54px;
+
+  margin-top: 18px;
+
+  border: none;
+
+  border-radius: 15px;
+
+  background-color: #172235;
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+}
+
+
+.sidebarLogout:hover {
+
+  background-color: #202d42;
+
+}
+
+
+.logoutIcon {
+
+  width: 18px;
+
+  height: 18px;
+
+}
+
+.dashboardContent {
+
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 10px 10px 40px;
+
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.dashboardHeader {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  margin-bottom: 28px;
+
+}
+
+
+.dashboardGreeting {
+
+  margin: 0 0 5px;
+
+  color: #19aa9e;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+}
+
+
+.dashboardHeader h1 {
+
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 30px;
+
+  font-weight: 700;
+
+}
+
+
+.dashboardSubtitle {
+
+  margin: 7px 0 0;
+
+  color: #7b8799;
+
+  font-size: 15px;
+
+}
+
+
+.dashboardDate {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 10px 15px;
+
+  background: white;
+
+  border: 1px solid #e1e7ee;
+
+  border-radius: 10px;
+
+  color: #52627a;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+}
+
+
+.dashboardDate svg {
+
+  width: 17px;
+
+  height: 17px;
+
+}
+
+
+/* ==========================================
+   SUMMARY GRID
+========================================== */
+
+.summaryGrid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 18px;
+
+  margin-bottom: 25px;
+
+}
+
+
+.summaryCard {
+
+  background-color: white;
+
+  border: 1px solid #e3e9f0;
+
+  border-radius: 16px;
+
+  padding: 20px;
+
+}
+
+
+.summaryCardTop {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 18px;
+
+}
+
+
+.summaryIcon {
+
+  width: 42px;
+
+  height: 42px;
+
+  border-radius: 11px;
+
+  background-color: #e9faf8;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+}
+
+
+.summaryIcon svg {
+
+  width: 20px;
+
+  height: 20px;
+
+  color: #16aa9e;
+
+}
+
+
+.summaryChange {
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  color: #159b90;
+
+  background-color: #e8faf7;
+
+  padding: 5px 8px;
+
+  border-radius: 6px;
+
+}
+
+
+.summaryWarning {
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  color: #c77718;
+
+  background-color: #fff4df;
+
+  padding: 5px 8px;
+
+  border-radius: 6px;
+
+}
+
+
+.summaryCard p {
+
+  margin: 0 0 6px;
+
+  color: #7d899b;
+
+  font-size: 14px;
+
+}
+
+
+.summaryCard h2 {
+
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 26px;
+
+}
+
+
+/* ==========================================
+   LOWER CONTENT
+========================================== */
+
+.dashboardLower {
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.5fr)
+    minmax(300px, 1fr);
+
+  gap: 20px;
+
+}
+
+
+.dashboardPanel {
+
+  background-color: white;
+
+  border: 1px solid #e3e9f0;
+
+  border-radius: 16px;
+
+  padding: 22px;
+
+}
+
+
+/* ==========================================
+   PANEL HEADER
+========================================== */
+
+.panelHeader {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+
+}
+
+
+.panelHeader h2 {
+
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 18px;
+
+}
+
+
+.panelHeader p {
+
+  margin: 5px 0 0;
+
+  color: #8792a3;
+
+  font-size: 13px;
+
+}
+
+
+.panelHeader button {
+
+  border: none;
+
+  background: transparent;
+
+  color: #159d92;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  cursor: pointer;
+
+}
+
+
+.panelHeader button svg {
+
+  width: 15px;
+
+  height: 15px;
+
+}
+
+
+/* ==========================================
+   SESSION
+========================================== */
+
+.sessionItem {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 16px 0;
+
+  border-bottom: 1px solid #edf1f5;
+
+}
+
+
+.sessionItem:last-child {
+
+  border-bottom: none;
+
+}
+
+
+.sessionTime {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  min-width: 90px;
+
+  color: #68768b;
+
+  font-size: 13px;
+
+}
+
+
+.sessionTime svg {
+
+  width: 16px;
+
+  height: 16px;
+
+  color: #91a4bb;
+
+}
+
+
+.sessionInfo {
+
+  flex: 1;
+
+}
+
+
+.sessionInfo h3 {
+
+  margin: 0 0 4px;
+
+  color: #273348;
+
+  font-size: 15px;
+
+}
+
+
+.sessionInfo p {
+
+  margin: 0;
+
+  color: #8a96a7;
+
+  font-size: 13px;
+
+}
+
+
+.sessionStatus {
+
+  color: #148f85;
+
+  background-color: #e8faf7;
+
+  padding: 6px 9px;
+
+  border-radius: 6px;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+}
+
+
+/* ==========================================
+   ACTIVITY
+========================================== */
+
+.activityItem {
+
+  display: flex;
+
+  gap: 13px;
+
+  padding: 15px 0;
+
+  border-bottom: 1px solid #edf1f5;
+
+}
+
+
+.activityItem:last-child {
+
+  border-bottom: none;
+
+}
+
+
+.activityDot {
+
+  width: 9px;
+
+  height: 9px;
+
+  margin-top: 5px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background-color: #20b5a7;
+
+}
+
+
+.activityItem h3 {
+
+  margin: 0 0 4px;
+
+  color: #273348;
+
+  font-size: 14px;
+
+}
+
+
+.activityItem p {
+
+  margin: 0 0 4px;
+
+  color: #8995a6;
+
+  font-size: 12px;
+
+}
+
+
+.activityItem span {
+
+  color: #a1aab7;
+
+  font-size: 11px;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 1200px) {
+
+  .summaryGrid {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .therapistDashboard {
+
+    flex-direction: column;
+
+  }
+
+
+  .dashboardSidebar {
+
+    width: 100%;
+
+    min-height: auto;
+
+  }
+
+
+  .dashboardLower {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .therapistDashboard {
+
+    padding: 12px;
+
+  }
+
+
+  .dashboardContent {
+
+    padding: 5px;
+
+  }
+
+
+  .summaryGrid {
+
+    grid-template-columns: 1fr;
+
+  }
+
+
+  .dashboardHeader {
+
+    flex-direction: column;
+
+    gap: 15px;
+
+  }
+
+
+  .sessionItem {
+
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+  }
+
+}
+
+/* ==========================================
+   DASHBOARD
+========================================== */
+
+.therapistDashboard {
+  min-height: 100vh;
+  background: #f7f9fa;
+}
+
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.dashboardSidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 350px;
+  height: 100vh;
+
+  background: #fff;
+  border-right: 1px solid #e1e5e5;
+
+  border-radius: 0;
+
+  box-sizing: border-box;
+
+  overflow-y: auto;
+
+  /* Hide scrollbar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.dashboardSidebar::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* ==========================================
+   MAIN CONTENT
+========================================== */
+
+.dashboardContent {
+  margin-left: 280px;
+
+  min-height: 100vh;
+  padding: 35px 45px;
+
+  box-sizing: border-box;
+
+  overflow-y: auto;
+
+  /* Hide scrollbar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.dashboardContent::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,107 @@
+.featureCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.featureCard{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #E2E8F0;
+}
+
+.featureIconColor, .featureIconColor1, .featureIconColor2, .featureIconColor3, .featureIconColor4, .featureIconColor5{
+    line-height: 0px;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.featureIcon, .featureIcon1, .featureIcon2, .featureIcon3, .featureIcon4, .featureIcon5{
+    height: 25px;
+    width: 25px;
+    font-size: 16px;
+}
+
+.featureIcon{
+    color: #0D9488;
+}
+
+.featureIcon1{
+    color: #4F46E5;
+}
+
+.featureIcon2{
+    color: #059669;
+}
+
+.featureIcon3{
+    color: #D97808;
+}
+
+.featureIcon4{
+    color: #0D9488;
+}
+
+.featureIcon5{
+    color: #ED728C;
+}
+
+.featureIconColor{
+    background-color: #D1FAE5;
+}
+
+.featureIconColor1{
+    background-color: #EDE9FE;
+}
+
+.featureIconColor2{
+    background-color: #D1FAE5;
+}
+
+.featureIconColor3{
+    background-color: #FEF3C7;
+}
+
+.featureIconColor4{
+    background-color: #D1FAE5;
+}
+
+.featureIconColor5{
+    background-color: #FEE2E2;
+}
+
+.featureCard h4{
+    margin-bottom: 15px;
+}
+
+.featureCard p{
+    color: #6B7280;
+    font-size: 14px;
+}
+
+.featureInfo{
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.featureInfo span{
+    color: #0D9488;
+    font-weight: 600;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.featureInfo h2{
+    margin-bottom: 10px;
+    font-size: 38px;
+}
+
+.featureInfo p{
+    font-size: 17px;
+    color: #64748B;
+}

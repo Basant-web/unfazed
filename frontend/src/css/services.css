@@ -1,0 +1,57 @@
+.fback{
+    padding: 15px;
+}
+
+.featureIconColor0{
+    font-weight: 600;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #D1FAE5;
+}
+
+.featureIconColor01{
+    font-weight: 600;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 15px;
+    background-color: #EDE9FE;
+}
+
+.featureIconColor02{
+    font-weight: 600;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 15px;
+    background-color: #D1FAE5;
+}
+
+.featureIconColor03{
+    font-weight: 600;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 15px;
+    background-color: #FEF3C7;
+}
+
+.featureIconColor04{
+    font-weight: 600;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 15px;
+    background-color: #D1FAE5;
+}
+
+.featureIconColor05{
+    font-weight: 600;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 15px;
+    background-color: #FEE2E2;
+}

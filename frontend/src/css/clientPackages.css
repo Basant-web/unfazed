@@ -1,0 +1,398 @@
+.clientPackagesSection {
+  padding: 36px 42px;
+  min-height: 100vh;
+  background: #f7f9fb;
+}
+
+/* Header */
+
+.clientPackagesHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+
+.clientPackagesEyebrow {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #6b8f71;
+}
+
+.clientPackagesHeader h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #24332a;
+}
+
+.clientPackagesHeader p {
+  margin: 8px 0 0;
+  color: #7b8580;
+  font-size: 14px;
+}
+
+.clientPackagesBrowseButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 9px;
+  padding: 11px 17px;
+  background: #4caf50;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.clientPackagesBrowseButton:hover {
+  background: #429447;
+}
+
+/* Stats */
+
+.clientPackagesStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.clientPackageStatCard {
+  background: white;
+  border: 1px solid #e8eeea;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.clientPackageStatIcon {
+  width: 43px;
+  height: 43px;
+  border-radius: 10px;
+  background: #edf7ef;
+  color: #4caf50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientPackageStatCard span {
+  display: block;
+  font-size: 12px;
+  color: #818b85;
+  margin-bottom: 5px;
+}
+
+.clientPackageStatCard strong {
+  font-size: 23px;
+  color: #29372e;
+}
+
+/* Content */
+
+.clientPackagesContent {
+  background: white;
+  border: 1px solid #e8eeea;
+  border-radius: 13px;
+  padding: 25px;
+}
+
+.clientPackagesListHeader {
+  margin-bottom: 22px;
+}
+
+.clientPackagesListHeader h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #29372e;
+}
+
+.clientPackagesListHeader p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #87908a;
+}
+
+/* Grid */
+
+.clientPackagesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* Package Card */
+
+.clientPackageCard {
+  border: 1px solid #e5ebe6;
+  border-radius: 13px;
+  padding: 20px;
+  background: #fff;
+  transition: 0.2s ease;
+}
+
+.clientPackageCard:hover {
+  border-color: #b9d8bd;
+  transform: translateY(-2px);
+}
+
+.clientPackageCompleted {
+  background: #fafbfa;
+}
+
+.clientPackageCardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clientPackageIcon {
+  width: 45px;
+  height: 45px;
+  border-radius: 11px;
+  background: #edf7ef;
+  color: #4caf50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientPackageStatus {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.clientPackageStatusActive {
+  background: #edf8ef;
+  color: #4b9255;
+}
+
+.clientPackageStatusCompleted {
+  background: #f0f2f1;
+  color: #7c8580;
+}
+
+/* Info */
+
+.clientPackageInfo {
+  margin-top: 18px;
+}
+
+.clientPackageInfo h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #29372e;
+}
+
+.clientPackageTherapist {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0 0;
+  color: #66716b;
+  font-size: 13px;
+}
+
+.clientPackageDescription {
+  min-height: 38px;
+  margin: 10px 0 0;
+  color: #89918c;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Progress */
+
+.clientPackageProgress {
+  margin-top: 20px;
+}
+
+.clientPackageProgressHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #68736c;
+  margin-bottom: 8px;
+}
+
+.clientPackageProgressHeader strong {
+  color: #344139;
+}
+
+.clientPackageProgressBar {
+  height: 7px;
+  background: #edf0ee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.clientPackageProgressFill {
+  height: 100%;
+  background: #4caf50;
+  border-radius: 10px;
+}
+
+.clientPackageProgressBottom {
+  margin-top: 7px;
+  font-size: 11px;
+  color: #89928c;
+}
+
+/* Details */
+
+.clientPackageDetails {
+  margin-top: 18px;
+  padding-top: 15px;
+  border-top: 1px solid #edf0ee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clientPackageDetails div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #7e8881;
+  font-size: 11px;
+}
+
+.clientPackageDetails strong {
+  font-size: 14px;
+  color: #344139;
+}
+
+/* Action */
+
+.clientPackageAction {
+  width: 100%;
+  margin-top: 16px;
+  padding: 10px 13px;
+  border: none;
+  border-radius: 8px;
+  background: #4caf50;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.clientPackageAction:hover {
+  background: #429447;
+}
+
+.clientPackageViewButton {
+  background: #eef2ef;
+  color: #56625a;
+}
+
+.clientPackageViewButton:hover {
+  background: #e3e9e5;
+}
+
+/* Bottom Banner */
+
+.clientPackageBanner {
+  margin-top: 22px;
+  padding: 20px 23px;
+  background: #edf7ef;
+  border: 1px solid #d8eadb;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.clientPackageBannerIcon {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: white;
+  color: #4caf50;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clientPackageBanner h3 {
+  margin: 0;
+  color: #304036;
+  font-size: 16px;
+}
+
+.clientPackageBanner p {
+  margin: 5px 0 0;
+  color: #718077;
+  font-size: 12px;
+}
+
+.clientPackageBanner button {
+  margin-left: auto;
+  border: none;
+  background: transparent;
+  color: #4caf50;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .clientPackagesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .clientPackagesStats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .clientPackagesSection {
+    padding: 25px 18px;
+  }
+
+  .clientPackagesHeader {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .clientPackagesStats {
+    grid-template-columns: 1fr;
+  }
+
+  .clientPackagesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .clientPackageBanner {
+    flex-wrap: wrap;
+  }
+
+  .clientPackageBanner button {
+    margin-left: 60px;
+  }
+}

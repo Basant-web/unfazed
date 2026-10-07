@@ -1,0 +1,241 @@
+.reviewsSection {
+  width: 100%;
+  padding: 40px 0 70px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.reviewsHeader {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.reviewsLabel {
+  color: #0d9488;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 16px;
+}
+
+.reviewsHeader h2 {
+  color: #0f172a;
+
+  font-size: 38px;
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  margin-bottom: 10px;
+}
+
+.reviewsSubtitle {
+  color: #64748b;
+
+  font-size: 17px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.reviewsGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 30px;
+
+  max-width: 1520px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.reviewCard {
+  min-height: 270px;
+
+  padding: 30px;
+
+  background-color: white;
+
+  border: 1px solid #dbe3ec;
+
+  border-radius: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+/* =========================
+   STARS
+========================= */
+
+.reviewStars {
+  display: flex;
+
+  gap: 4px;
+
+  color: #fbb316;
+
+  margin-bottom: 18px;
+}
+
+
+/* =========================
+   REVIEW TEXT
+========================= */
+
+.reviewText {
+  color: #334155;
+
+  font-size: 15px;
+
+  font-style: italic;
+
+  line-height: 1.6;
+
+  margin: 0;
+
+  flex: 1;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.reviewUser {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding-top: 15px;
+
+  margin-top: 18px;
+
+  border-top: 1px solid #e2e8f0;
+}
+
+
+/* =========================
+   AVATAR
+========================= */
+
+.reviewAvatar {
+  width: 46px;
+  height: 46px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* DARK */
+
+.reviewAvatar.dark {
+  background-color: #0f172a;
+
+  color: #0d9488;
+}
+
+
+/* LIGHT */
+
+.reviewAvatar.light {
+  background-color: #ccfbf1;
+
+  color: #0d9488;
+}
+
+
+/* PURPLE */
+
+.reviewAvatar.purple {
+  background-color: #4f46e5;
+
+  color: white;
+}
+
+
+/* =========================
+   USER TEXT
+========================= */
+
+.reviewUser h3 {
+  color: #0f172a;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  margin-bottom: 3px;
+}
+
+.reviewUser p {
+  color: #94a3b8;
+
+  font-size: 13px;
+
+  margin: 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+  .reviewsGrid {
+    grid-template-columns: 1fr;
+    max-width: 650px;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .reviewsHeader h2 {
+    font-size: 30px;
+  }
+
+  .reviewsSubtitle {
+    font-size: 14px;
+  }
+
+  .reviewCard {
+    padding: 25px;
+  }
+
+}

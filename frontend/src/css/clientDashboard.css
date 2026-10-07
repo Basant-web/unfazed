@@ -1,0 +1,704 @@
+/* =================================
+   MAIN DASHBOARD
+================================= */
+
+.clientDashboard {
+  min-height: 100vh;
+
+  display: flex;
+
+  background: #f5f8f8;
+}
+
+
+.clientDashboardContent {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 35px 40px;
+
+  overflow-y: auto;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.clientDashboardHeader {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  margin-bottom: 28px;
+}
+
+
+.clientDashboardGreeting {
+  margin: 0 0 5px;
+
+  font-size: 14px;
+
+  color: #6c7b7a;
+}
+
+
+.clientDashboardHeader h1 {
+  margin: 0;
+
+  font-size: 30px;
+
+  color: #172322;
+}
+
+
+.clientDashboardSubtitle {
+  margin: 8px 0 0;
+
+  color: #71807f;
+
+  font-size: 14px;
+}
+
+
+.clientDashboardDate {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 10px 15px;
+
+  background: white;
+
+  border: 1px solid #e4ebea;
+
+  border-radius: 10px;
+
+  color: #657371;
+
+  font-size: 13px;
+}
+
+
+/* =================================
+   NEXT SESSION
+================================= */
+
+.nextSessionCard {
+  display: grid;
+
+  grid-template-columns: 1.5fr 1fr auto;
+
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 26px 28px;
+
+  background: #e6f5f2;
+
+  border: 1px solid #d5ebe7;
+
+  border-radius: 18px;
+
+  margin-bottom: 24px;
+}
+
+
+.nextSessionLabel {
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  color: #37877e;
+}
+
+
+.nextSessionInfo h2 {
+  margin: 7px 0 14px;
+
+  font-size: 21px;
+
+  color: #203331;
+}
+
+
+.nextSessionTherapist {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+.therapistSmallAvatar {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #d0e9e5;
+
+  color: #28756c;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+
+.nextSessionTherapist div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+
+.nextSessionTherapist strong {
+  font-size: 13px;
+}
+
+
+.nextSessionTherapist span {
+  font-size: 12px;
+
+  color: #71817f;
+}
+
+
+.nextSessionTime {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+
+.sessionDate,
+.sessionTime {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: #61716f;
+
+  font-size: 13px;
+}
+
+
+.sessionTime strong {
+  font-size: 18px;
+
+  color: #263735;
+}
+
+
+.sessionDuration {
+  font-size: 12px;
+
+  color: #778583;
+}
+
+
+.joinSessionButton {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 8px;
+
+  padding: 12px 18px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #2f8f83;
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* =================================
+   STAT CARDS
+================================= */
+
+.clientOverviewStats {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+
+  margin-bottom: 24px;
+}
+
+
+.clientOverviewCard {
+  display: flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  padding: 19px;
+
+  background: white;
+
+  border: 1px solid #e6eceb;
+
+  border-radius: 14px;
+}
+
+
+.clientOverviewCardIcon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #e7f4f2;
+
+  color: #32877e;
+}
+
+
+.clientOverviewCard div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.clientOverviewCard span {
+  font-size: 12px;
+
+  color: #75817f;
+}
+
+
+.clientOverviewCard strong {
+  font-size: 21px;
+
+  color: #263533;
+}
+
+
+/* =================================
+   LOWER SECTION
+================================= */
+
+.clientDashboardLower {
+  display: grid;
+
+  grid-template-columns: 1.5fr 1fr;
+
+  gap: 22px;
+
+  margin-bottom: 24px;
+}
+
+
+.clientDashboardPanel {
+  background: white;
+
+  border: 1px solid #e6eceb;
+
+  border-radius: 16px;
+
+  padding: 23px;
+}
+
+
+.clientPanelHeader {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+
+.clientPanelHeader h2 {
+  margin: 0 0 5px;
+
+  font-size: 18px;
+
+  color: #243331;
+}
+
+
+.clientPanelHeader p {
+  margin: 0;
+
+  font-size: 12px;
+
+  color: #7a8785;
+}
+
+
+.clientPanelHeader button {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #32877e;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* =================================
+   UPCOMING SESSIONS
+================================= */
+
+.upcomingClientSessions {
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.clientSessionItem {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 14px 0;
+
+  border-bottom: 1px solid #edf1f0;
+}
+
+
+.clientSessionItem:last-child {
+  border-bottom: none;
+}
+
+
+.clientSessionDate {
+  width: 43px;
+  height: 48px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #eef7f5;
+
+  border-radius: 9px;
+}
+
+
+.clientSessionDate strong {
+  font-size: 17px;
+
+  color: #32877e;
+}
+
+
+.clientSessionDate span {
+  font-size: 9px;
+
+  color: #70807e;
+}
+
+
+.clientSessionDetails {
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+
+.clientSessionDetails strong {
+  font-size: 13px;
+
+  color: #303d3b;
+}
+
+
+.clientSessionDetails span {
+  font-size: 12px;
+
+  color: #7b8785;
+}
+
+
+.clientSessionTime {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  font-size: 12px;
+
+  color: #6c7977;
+}
+
+
+/* =================================
+   MY THERAPIST
+================================= */
+
+.myTherapist {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 8px 0 20px;
+}
+
+
+.myTherapistAvatar {
+  width: 62px;
+  height: 62px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e1f1ee;
+
+  color: #28786f;
+
+  font-weight: 700;
+
+  font-size: 18px;
+}
+
+
+.myTherapistInfo {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+.myTherapistInfo h3 {
+  margin: 0;
+
+  font-size: 15px;
+
+  color: #263634;
+}
+
+
+.myTherapistInfo span {
+  font-size: 12px;
+
+  color: #75817f;
+}
+
+
+.therapistActions {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 10px;
+}
+
+
+.therapistActions button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 6px;
+
+  padding: 10px;
+
+  border: 1px solid #dce7e5;
+
+  background: white;
+
+  border-radius: 8px;
+
+  color: #347f76;
+
+  cursor: pointer;
+}
+
+
+/* =================================
+   QUICK ACTIONS
+================================= */
+
+.clientQuickActions {
+  display: flex;
+
+  gap: 12px;
+}
+
+
+.clientQuickActions button {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 11px 16px;
+
+  border: 1px solid #dce7e5;
+
+  background: white;
+
+  border-radius: 9px;
+
+  color: #526360;
+
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+
+.clientQuickActions button:hover {
+  border-color: #8ebdb7;
+}
+
+
+/* =================================
+   COMING SOON
+================================= */
+
+.clientComingSoon {
+  min-height: 70vh;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+.clientComingSoon h1 {
+  margin-bottom: 5px;
+}
+
+
+.clientComingSoon p {
+  color: #7a8785;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1100px) {
+
+  .clientOverviewStats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nextSessionCard {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .joinSessionButton {
+    width: fit-content;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .clientDashboardContent {
+    padding: 25px 20px;
+  }
+
+  .clientDashboardLower {
+    grid-template-columns: 1fr;
+  }
+
+  .nextSessionCard {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .clientOverviewStats {
+    grid-template-columns: 1fr;
+  }
+
+  .clientDashboardHeader {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .clientQuickActions {
+    flex-direction: column;
+  }
+
+}

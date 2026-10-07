@@ -1,0 +1,97 @@
+.loginSection {
+  width: 100%;
+  padding: 40px;
+  background-color: white;
+}
+
+.loginContainer {
+  width: 100%;
+}
+
+.loginHeader {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.loginHeader h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.loginHeader p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.loginSection .inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 18px;
+}
+
+.loginSection .inputGroup label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.loginSection .inputGroup input {
+  width: 100%;
+  padding: 13px 14px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+
+  outline: none;
+
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.loginSection .inputGroup input:focus {
+  border-color: #0d9488;
+}
+
+.loginButton {
+  width: 100%;
+  padding: 13px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #0d9488;
+  color: white;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  background-color: #0f766e;
+}
+
+.loginMessage {
+  text-align: center;
+  margin-top: 18px;
+  color: #0d9488;
+  font-size: 14px;
+}
+
+.registerText {
+  text-align: center;
+  margin-top: 22px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.registerText span {
+  color: #0d9488;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,226 @@
+.publicProfile {
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+.profileLoading,
+.profileError {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Plus Jakarta Sans";
+}
+
+
+/* ==============================
+   HERO
+============================== */
+
+.profileHero {
+  background-color: #0f172a;
+
+  padding: 100px 60px;
+
+  color: white;
+
+  text-align: center;
+}
+
+.profileHeroContent {
+  max-width: 900px;
+
+  margin: 0 auto;
+}
+
+.profileLabel {
+  color: #47e7d4;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 20px;
+}
+
+.profileHero h1 {
+  font-size: 64px;
+
+  font-weight: 700;
+
+  line-height: 1.1;
+
+  margin-bottom: 20px;
+}
+
+.profileSubtitle {
+  color: #cbd5e1;
+
+  font-size: 18px;
+
+  line-height: 1.6;
+}
+
+
+/* ==============================
+   COMMON
+============================== */
+
+.profileContent {
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  padding: 80px 30px;
+}
+
+.sectionLabel {
+  color: #0d9488;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 15px;
+}
+
+.profileContent h2 {
+  color: #0f172a;
+
+  font-size: 38px;
+
+  line-height: 1.2;
+
+  margin-bottom: 25px;
+}
+
+
+/* ==============================
+   ABOUT
+============================== */
+
+.profileAbout {
+  background-color: white;
+}
+
+.aboutText {
+  max-width: 800px;
+
+  color: #64748b;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+
+/* ==============================
+   SPECIALIZATIONS
+============================== */
+
+.profileSpecializations {
+  background-color: #f8fafc;
+}
+
+.specializationList {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+}
+
+.specializationCard {
+  padding: 14px 20px;
+
+  background-color: white;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 10px;
+
+  color: #0f172a;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+/* ==============================
+   SERVICES
+============================== */
+
+.profileServices {
+  background-color: white;
+}
+
+.serviceCards {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+.serviceCard {
+  padding: 28px;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 14px;
+
+  background-color: #f8fafc;
+}
+
+.serviceCard h3 {
+  color: #0f172a;
+
+  font-size: 18px;
+
+  margin-bottom: 12px;
+}
+
+.serviceCard p {
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 768px) {
+
+  .profileHero {
+    padding: 80px 25px;
+  }
+
+  .profileHero h1 {
+    font-size: 42px;
+  }
+
+  .profileContent {
+    padding: 60px 20px;
+  }
+
+  .profileContent h2 {
+    font-size: 30px;
+  }
+
+  .serviceCards {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -1,0 +1,241 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background-color: #0f172a;
+
+  color: white;
+
+  margin-top: 60px;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.footerContainer {
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  padding: 65px 40px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.8fr
+    1fr
+    1fr
+    1fr
+    1.3fr;
+
+  gap: 45px;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.footerLogo {
+  font-size: 28px;
+
+  font-weight: 700;
+
+  color: white;
+
+  margin-bottom: 15px;
+}
+
+.footerLogo span {
+  color: #14b8a6;
+}
+
+.footerDescription {
+  max-width: 310px;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  margin-bottom: 20px;
+}
+
+
+/* =========================
+   HIPAA BADGE
+========================= */
+
+.hipaaBadge {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 8px 12px;
+
+  border: 1px solid #334155;
+
+  border-radius: 8px;
+
+  color: #cbd5e1;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.hipaaBadge svg {
+  color: #14b8a6;
+}
+
+
+/* =========================
+   COLUMNS
+========================= */
+
+.footerColumn {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.footerColumn h3 {
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 700;
+
+  margin-bottom: 8px;
+}
+
+.footerColumn a {
+  width: fit-content;
+
+  color: #94a3b8;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  transition: 0.2s ease;
+}
+
+.footerColumn a:hover {
+  color: #14b8a6;
+
+  transform: translateX(2px);
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contactColumn {
+  gap: 16px;
+}
+
+.contactItem {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+
+  line-height: 1.4;
+}
+
+.contactItem svg {
+  flex-shrink: 0;
+
+  color: #14b8a6;
+
+  margin-top: 1px;
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.footerBottom {
+  max-width: 1500px;
+
+  margin: 0 auto;
+
+  padding: 20px 40px;
+
+  border-top: 1px solid #1e293b;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.footerBottom p {
+  color: #64748b;
+
+  font-size: 13px;
+
+  margin: 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+  .footerContainer {
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+  .footerBrand {
+    grid-column: span 3;
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .footerContainer {
+    grid-template-columns: 1fr;
+
+    padding: 50px 25px;
+
+    gap: 35px;
+  }
+
+  .footerBrand {
+    grid-column: auto;
+  }
+
+  .footerBottom {
+    padding: 20px 25px;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    align-items: flex-start;
+  }
+
+}

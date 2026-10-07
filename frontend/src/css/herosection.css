@@ -1,0 +1,110 @@
+.heroSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heroTitle{
+    font-size: 72px;
+    margin: 0 160px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.2px;
+}
+
+.heroTitle span{
+    color: #0D9488;
+}
+
+.heroDesc{
+    font-size: 18px;
+    margin: 0 400px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
+}
+
+.heroBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.heroBtn button{
+    padding: 12px 24px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.heroBtn1{
+    background-color: #0F172A;
+}
+
+.heroBtn2{
+    background-color: #0D9488;
+}
+
+.heroIntro{
+    background-color: #0F172A;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 40px;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hroMind{
+    
+}
+.heroMind span{
+    color: #47E7D4;
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.heroMind p{
+    margin-top: 20px;
+    font-size: 14px;
+    color: #CBD5E1;
+    line-height: 1.4;
+}
+
+.heroCard{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.herocard1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #283B46;
+    border-radius: 20px;
+    
+    padding: 20px 40px;
+}
+
+.herocard1 h3{
+    color: #47E7D4;
+    font-size: 24px;
+}
+
+.herocard1 p{
+    color: #CBD5E1;
+    font-size: 14px;
+}

@@ -1,0 +1,365 @@
+.therapistSection {
+  width: 100%;
+  padding: 30px 0 60px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.therapistHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 60px;
+}
+
+.therapistLabel {
+  color: #0d9488;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  margin-bottom: 6px;
+}
+
+.therapistHeader h2 {
+  color: #0f172a;
+
+  font-size: 38px;
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  margin-bottom: 8px;
+}
+
+.therapistSubtitle {
+  color: #64748b;
+
+  font-size: 17px;
+
+  line-height: 1.5;
+}
+
+
+/* DIRECTORY BUTTON */
+
+.directoryButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 12px 20px;
+
+  margin-top: 25px;
+
+  border: none;
+  border-radius: 25px;
+
+  background-color: #f1f5f9;
+
+  color: #0f172a;
+
+  font-family: inherit;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.directoryButton:hover {
+  background-color: #e2e8f0;
+}
+
+
+/* =========================
+   GRID
+========================= */
+
+.therapistGrid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 30px;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.therapistCard {
+  min-height: 318px;
+
+  padding: 26px;
+
+  background-color: white;
+
+  border: 1px solid #dbe3ec;
+
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+
+  transition: 0.2s ease;
+}
+
+.therapistCard:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 30px
+    rgba(15, 23, 42, 0.08);
+}
+
+
+/* FEATURED CARD */
+
+.therapistCard.featured {
+  border-color: #0d9488;
+}
+
+
+/* =========================
+   TOP
+========================= */
+
+.cardTop {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: flex-start;
+
+  margin-bottom: 18px;
+}
+
+
+/* AVATAR */
+
+.therapistAvatar {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 18px;
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: 700;
+}
+
+
+/* =========================
+   COLORS
+========================= */
+
+.teal {
+  background-color: #0d9488;
+  color: #0d9488;
+}
+
+.blue {
+  background-color: #4f46e5;
+  color: #4f46e5;
+}
+
+.green {
+  background-color: #059669;
+  color: #059669;
+}
+
+.orange {
+  background-color: #d97706;
+  color: #d97706;
+}
+
+
+/* Fix avatar text */
+
+.therapistAvatar.teal,
+.therapistAvatar.blue,
+.therapistAvatar.green,
+.therapistAvatar.orange {
+  color: white;
+}
+
+
+/* =========================
+   RATING
+========================= */
+
+.rating {
+  display: flex;
+
+  align-items: center;
+
+  gap: 4px;
+
+  color: #f59e0b;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+/* =========================
+   INFO
+========================= */
+
+.therapistInfo {
+  flex: 1;
+}
+
+.therapistInfo h3 {
+  color: #0f172a;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  margin-bottom: 4px;
+}
+
+.therapistRole {
+  font-size: 14px;
+
+  font-weight: 500;
+
+  margin-bottom: 10px;
+
+  background: transparent;
+}
+
+.therapistRole.teal {
+  color: #0d9488;
+}
+
+.therapistRole.blue {
+  color: #4f46e5;
+}
+
+.therapistRole.green {
+  color: #059669;
+}
+
+.therapistRole.orange {
+  color: #d97706;
+}
+
+.therapistDescription {
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.cardBottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-top: 16px;
+
+  border-top: 1px solid #e2e8f0;
+}
+
+.cardBottom strong {
+  color: #0f172a;
+
+  font-size: 14px;
+}
+
+
+/* BOOK BUTTON */
+
+.bookButton {
+  padding: 10px 16px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.bookButton.teal {
+  background-color: #0d9488;
+}
+
+.bookButton.blue {
+  background-color: #4f46e5;
+}
+
+.bookButton.green {
+  background-color: #059669;
+}
+
+.bookButton.orange {
+  background-color: #d97706;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+
+  .therapistGrid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 700px) {
+
+  .therapistHeader {
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .therapistHeader h2 {
+    font-size: 30px;
+  }
+
+  .therapistGrid {
+    grid-template-columns: 1fr;
+  }
+
+}

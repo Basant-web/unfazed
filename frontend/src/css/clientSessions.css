@@ -1,0 +1,411 @@
+.clientSessions {
+  width: 100%;
+}
+
+/* HEADER */
+
+.clientSessionsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.clientSessionsHeader h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #172323;
+}
+
+.clientSessionsHeader p {
+  margin: 7px 0 0;
+  color: #718080;
+  font-size: 14px;
+}
+
+.bookSessionButton {
+  border: none;
+  background: #173b3b;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.bookSessionButton:hover {
+  background: #245454;
+}
+
+
+/* STATS */
+
+.sessionStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.sessionStatCard {
+  background: white;
+  border: 1px solid #e3ebeb;
+  border-radius: 10px;
+  padding: 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.sessionStatIcon {
+  width: 42px;
+  height: 42px;
+  border-radius: 9px;
+
+  background: #e7f3f1;
+  color: #286b68;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sessionStatCard span {
+  display: block;
+  color: #778686;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.sessionStatCard strong {
+  font-size: 21px;
+  color: #172323;
+}
+
+
+/* SECTION */
+
+.sessionsSection {
+  margin-bottom: 30px;
+}
+
+.sessionsSectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.sessionsSectionHeader h2 {
+  margin: 0;
+  font-size: 19px;
+  color: #172323;
+}
+
+.sessionsSectionHeader p {
+  margin: 5px 0 0;
+  color: #788686;
+  font-size: 13px;
+}
+
+
+/* UPCOMING SESSION */
+
+.upcomingSessionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sessionCard {
+  background: white;
+  border: 1px solid #e1e9e9;
+  border-radius: 10px;
+  padding: 18px;
+
+  display: grid;
+  grid-template-columns: 62px 1fr auto;
+  align-items: center;
+  gap: 18px;
+}
+
+
+/* DATE */
+
+.sessionDate {
+  width: 58px;
+  height: 64px;
+
+  background: #edf6f5;
+  border-radius: 9px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sessionDate strong {
+  font-size: 23px;
+  line-height: 1;
+  color: #214d4b;
+}
+
+.sessionDate span {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #5f7776;
+}
+
+
+/* SESSION INFO */
+
+.sessionTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sessionTitleRow h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #1c2c2c;
+}
+
+.sessionUpcomingBadge {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 20px;
+
+  background: #e5f4ed;
+  color: #267052;
+}
+
+.sessionTherapist {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-top: 9px;
+
+  color: #405555;
+  font-size: 13px;
+}
+
+.sessionTherapist small {
+  color: #899696;
+  margin-left: 4px;
+}
+
+.sessionDetails {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 10px;
+}
+
+.sessionDetails span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  color: #718181;
+  font-size: 12px;
+}
+
+
+/* ACTIONS */
+
+.sessionActions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.joinSessionButton {
+  border: none;
+
+  background: #dff0ee;
+  color: #245e5b;
+
+  border-radius: 7px;
+  padding: 10px 13px;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.joinSessionButton:hover {
+  background: #cee7e4;
+}
+
+.sessionMoreButton {
+  border: none;
+  background: transparent;
+  color: #758383;
+
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sessionMoreButton:hover {
+  background: #f1f5f5;
+}
+
+
+/* PAST SESSIONS */
+
+.pastSessionsSection {
+  background: white;
+  border: 1px solid #e1e9e9;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.viewAllButton {
+  border: none;
+  background: transparent;
+  color: #286b68;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.pastSessionsTable {
+  width: 100%;
+}
+
+.pastTableHeader,
+.pastTableRow {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr 1fr 40px;
+  align-items: center;
+  gap: 15px;
+}
+
+.pastTableHeader {
+  padding: 13px 10px;
+
+  border-bottom: 1px solid #e5ebeb;
+
+  color: #899595;
+  font-size: 11px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.pastTableRow {
+  padding: 16px 10px;
+
+  border-bottom: 1px solid #edf1f1;
+
+  font-size: 13px;
+  color: #4c5d5d;
+}
+
+.pastTableRow:last-child {
+  border-bottom: none;
+}
+
+.pastTableRow strong {
+  display: block;
+  color: #273838;
+  font-size: 13px;
+}
+
+.pastTableRow small {
+  display: block;
+  color: #899696;
+  margin-top: 3px;
+}
+
+.pastTherapist {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.completedBadge {
+  width: fit-content;
+
+  padding: 5px 9px;
+  border-radius: 20px;
+
+  background: #e8f5ee;
+  color: #287052;
+
+  font-size: 11px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .sessionStats {
+    grid-template-columns: 1fr;
+  }
+
+  .sessionCard {
+    grid-template-columns: 55px 1fr;
+  }
+
+  .sessionActions {
+    grid-column: 2;
+  }
+
+  .pastTableHeader {
+    display: none;
+  }
+
+  .pastTableRow {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .clientSessionsHeader {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .sessionCard {
+    grid-template-columns: 1fr;
+  }
+
+  .sessionActions {
+    grid-column: auto;
+  }
+
+  .sessionDetails {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .pastTableRow {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -1,0 +1,204 @@
+.therapistPayments {
+  padding: 30px;
+}
+
+.therapistPaymentsHeader {
+  margin-bottom: 25px;
+}
+
+.therapistPaymentsHeader h1 {
+  margin: 0 0 6px;
+  font-size: 28px;
+}
+
+.therapistPaymentsHeader p {
+  margin: 0;
+  color: #6b7280;
+}
+
+
+/* SUMMARY */
+
+.therapistPaymentSummary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.therapistPaymentCard {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.therapistPaymentIcon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef7f6;
+  color: #16827d;
+  border-radius: 10px;
+}
+
+.therapistPaymentCard span {
+  display: block;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.therapistPaymentCard strong {
+  display: block;
+  margin: 4px 0;
+  font-size: 22px;
+}
+
+.therapistPaymentCard small {
+  color: #9ca3af;
+}
+
+
+/* TRANSACTIONS */
+
+.therapistTransactions {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.therapistPaymentSectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.therapistPaymentSectionHeader h2 {
+  margin: 0 0 5px;
+  font-size: 20px;
+}
+
+.therapistPaymentSectionHeader p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.therapistDownloadButton {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 14px;
+  border: 1px solid #d9e0e5;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+}
+
+
+/* TABLE */
+
+.therapistTransactionHeader,
+.therapistTransactionRow {
+  display: grid;
+  grid-template-columns: 1.1fr 1.2fr 1.5fr 1fr 1fr 45px;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 20px;
+}
+
+.therapistTransactionHeader {
+  background: #f8fafb;
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.therapistTransactionRow {
+  border-top: 1px solid #eef0f2;
+  font-size: 14px;
+}
+
+.therapistClientName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.therapistPaidBadge,
+.therapistPendingBadge {
+  width: fit-content;
+  padding: 5px 9px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.therapistPaidBadge {
+  background: #e9f7ef;
+  color: #21864b;
+}
+
+.therapistPendingBadge {
+  background: #fff5df;
+  color: #a66b00;
+}
+
+.therapistInvoiceButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #667085;
+}
+
+.therapistPackages {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.therapistPackageGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding: 20px;
+}
+
+.therapistPackageCard {
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.therapistPackageCard h3 {
+  margin: 0 0 12px;
+}
+
+.therapistPackageCard strong {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.therapistPackageCard p {
+  margin: 0 0 8px;
+  color: #6b7280;
+}
+
+.therapistPackageCard span {
+  color: #9ca3af;
+  font-size: 13px;
+}

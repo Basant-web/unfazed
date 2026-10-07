@@ -1,0 +1,393 @@
+.clientProfileSection {
+  padding: 36px 42px;
+  min-height: 100vh;
+  background: #f7f9fb;
+}
+
+/* Header */
+
+.clientProfileHeader {
+  margin-bottom: 27px;
+}
+
+.clientProfileEyebrow {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #6b8f71;
+}
+
+.clientProfileHeader h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #24332a;
+}
+
+.clientProfileHeader p {
+  margin: 8px 0 0;
+  color: #7b8580;
+  font-size: 14px;
+}
+
+/* Layout */
+
+.clientProfileLayout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+/* Side Card */
+
+.clientProfileSideCard {
+  padding: 25px 20px;
+  background: white;
+  border: 1px solid #e7ece9;
+  border-radius: 13px;
+  text-align: center;
+}
+
+.clientProfileAvatarLarge {
+  width: 82px;
+  height: 82px;
+  margin: 0 auto 13px;
+  border-radius: 50%;
+  background: #edf7ef;
+  color: #4caf50;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.clientChangePhotoButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 11px;
+  border: 1px solid #dce5df;
+  border-radius: 7px;
+  background: white;
+  color: #68736c;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.clientChangePhotoButton:hover {
+  background: #f4f7f5;
+}
+
+.clientProfileSideCard h2 {
+  margin: 16px 0 3px;
+  font-size: 18px;
+  color: #29372e;
+}
+
+.clientProfileRole {
+  margin: 0;
+  color: #8a948e;
+  font-size: 12px;
+}
+
+.clientProfileVerified {
+  width: fit-content;
+  margin: 14px auto 20px;
+  padding: 6px 10px;
+  border-radius: 20px;
+  background: #edf7ef;
+  color: #4b9255;
+  font-size: 11px;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.clientProfileSideInfo {
+  padding-top: 18px;
+  border-top: 1px solid #edf0ee;
+}
+
+.clientProfileSideInfo div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+  text-align: left;
+}
+
+.clientProfileSideInfo div:last-child {
+  margin-bottom: 0;
+}
+
+.clientProfileSideInfo span {
+  color: #89928c;
+  font-size: 11px;
+}
+
+.clientProfileSideInfo strong {
+  color: #455148;
+  font-size: 11px;
+}
+
+/* Main */
+
+.clientProfileMain {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.clientProfileCard {
+  padding: 24px;
+  background: white;
+  border: 1px solid #e7ece9;
+  border-radius: 13px;
+}
+
+.clientProfileCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 19px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #edf0ee;
+}
+
+.clientProfileCardHeader h2 {
+  margin: 0;
+  color: #29372e;
+  font-size: 18px;
+}
+
+.clientProfileCardHeader p {
+  margin: 5px 0 0;
+  color: #89928c;
+  font-size: 12px;
+}
+
+.clientProfileCardHeader > svg {
+  color: #4caf50;
+}
+
+/* Form */
+
+.clientProfileFormGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+}
+
+.clientProfileInputGroup label {
+  display: block;
+  margin-bottom: 7px;
+  color: #526057;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.clientProfileInputWrapper {
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid #dfe6e1;
+  border-radius: 8px;
+  background: white;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.clientProfileInputWrapper:focus-within {
+  border-color: #9ccba1;
+}
+
+.clientProfileInputWrapper svg {
+  color: #8b968f;
+  flex-shrink: 0;
+}
+
+.clientProfileInputWrapper input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #3e4b43;
+  font-size: 13px;
+  background: transparent;
+}
+
+.clientProfileInputWrapper input::placeholder {
+  color: #adb5b0;
+}
+
+.clientProfileDisabled {
+  background: #f5f7f6;
+}
+
+.clientSaveProfileButton {
+  margin-top: 21px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4caf50;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.clientSaveProfileButton:hover {
+  background: #429447;
+}
+
+/* Password */
+
+.clientChangePasswordButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px 15px;
+  border: 1px solid #dce5df;
+  border-radius: 8px;
+  background: white;
+
+  color: #526057;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.clientChangePasswordButton:hover {
+  background: #f4f7f5;
+}
+
+/* Settings */
+
+.clientSettingsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.clientSettingRow {
+  min-height: 64px;
+  padding: 12px 0;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  border-bottom: 1px solid #edf0ee;
+}
+
+.clientSettingRow:first-child {
+  padding-top: 0;
+}
+
+.clientSettingRow:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.clientSettingIcon {
+  width: 37px;
+  height: 37px;
+  border-radius: 9px;
+  background: #edf7ef;
+  color: #4caf50;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.clientSettingText {
+  flex: 1;
+}
+
+.clientSettingText strong {
+  display: block;
+  color: #3d4a42;
+  font-size: 13px;
+}
+
+.clientSettingText span {
+  display: block;
+  margin-top: 3px;
+  color: #8a948e;
+  font-size: 11px;
+}
+
+/* Toggle */
+
+.clientToggle {
+  width: 40px;
+  height: 22px;
+  padding: 2px;
+  border: none;
+  border-radius: 20px;
+  background: #d9dfdb;
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.clientToggle span {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+
+  transition: 0.2s ease;
+}
+
+.clientToggleActive {
+  background: #4caf50;
+}
+
+.clientToggleActive span {
+  transform: translateX(18px);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .clientProfileLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .clientProfileSideCard {
+    max-width: none;
+  }
+
+  .clientProfileFormGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .clientProfileSection {
+    padding: 25px 18px;
+  }
+
+  .clientProfileCard {
+    padding: 18px;
+  }
+
+  .clientProfileHeader h1 {
+    font-size: 25px;
+  }
+}

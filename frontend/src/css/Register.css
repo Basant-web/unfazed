@@ -1,0 +1,230 @@
+.registerSection {
+  width: 100%;
+
+  padding: 32px 40px;
+
+  background-color: white;
+}
+
+
+.registerContainer {
+  width: 100%;
+
+  max-width: none;
+
+  border: none;
+
+  border-radius: 0;
+
+  box-shadow: none;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.registerHeader {
+  text-align: center;
+
+  margin-bottom: 22px;
+}
+
+.registerHeader h1 {
+  font-size: 30px;
+
+  font-weight: 700;
+
+  color: #0f172a;
+
+  margin-bottom: 6px;
+}
+
+.registerHeader p {
+  color: #64748b;
+
+  font-size: 14px;
+
+  line-height: 1.4;
+}
+
+
+/* =================================
+   ROLE
+================================= */
+
+.roleGroup {
+  margin-bottom: 18px;
+}
+
+.roleLabel {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+.roleOptions {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+}
+
+.role {
+  padding: 13px;
+
+  text-align: left;
+
+  background-color: white;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-family: inherit;
+}
+
+.role strong {
+  display: block;
+
+  color: #0f172a;
+
+  font-size: 14px;
+
+  margin-bottom: 4px;
+}
+
+.role span {
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+.role.active {
+  border: 2px solid #0d9488;
+
+  background-color: #f0fdfa;
+}
+
+
+/* =================================
+   INPUTS
+================================= */
+
+.inputGroup {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+
+  margin-bottom: 14px;
+}
+
+.inputGroup label {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+.inputGroup input {
+  width: 100%;
+
+  padding: 13px 14px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 8px;
+
+  outline: none;
+
+  font-family: inherit;
+
+  font-size: 14px;
+}
+
+.inputGroup input:focus {
+  border-color: #0d9488;
+}
+
+
+/* =================================
+   CREATE ACCOUNT
+================================= */
+
+.createAccountButton {
+  width: 100%;
+
+  padding: 13px;
+
+  margin-top: 5px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background-color: #0d9488;
+
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.createAccountButton:hover {
+  background-color: #0f766e;
+}
+
+
+/* =================================
+   MESSAGE
+================================= */
+
+.registerMessage {
+  text-align: center;
+
+  margin-top: 18px;
+
+  color: #0d9488;
+
+  font-size: 14px;
+}
+
+
+/* =================================
+   LOGIN
+================================= */
+
+.loginText {
+  text-align: center;
+
+  margin-top: 20px;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+.loginText span {
+  color: #0d9488;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
